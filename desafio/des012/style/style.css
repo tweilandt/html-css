@@ -31,7 +31,7 @@ header > h1{
 }
 header > p{
     font-family: var(--font0);
-    font-size: 1.2em;
+    font-size: 20px;
     padding-bottom: 40px;
 }
 
@@ -61,41 +61,44 @@ main p{
     display: block;
     margin-top: 50px;
     margin-left: 20px;
-
-}
-
-
-section#image{
-    position: relative;
-    background-color: black;
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: cover;
-}
-
-section#noimage{
-    height: 200vh;
-}
-
-section#noimage p{
     margin-top: 1em;
     margin-bottom: 1em;
 
 }
 
 
+section.image{
+    position: relative;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.noimage{
+    height: 200vh;
+    position: relative;
+}
+
+section.noimage p{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -60%);
+
+}
+
+
 #img1{
     position: relative;
-    background-image: url(../imagens/background001.jpg) 
+    background-image: url(../imagens/background001.jpg);
+
 }
 
 #img1 p{
     position: absolute;
     background-color: black;
     color: white;
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 20px;
     top: 50%;
     transform: translate(0%, -60%);
 }
