@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Bellota:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Bakbak+One&family=Bellota:wght@300&family=Passion+One:wght@700&display=swap');
+
+:root{
+    --font0: Arial Verdana Helvetica sans-serif;
+    --font1: "Bellota", system-ui;
+    --font2: "Passion One", sans-serif
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: black;
+    max-height: 500px;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+   padding-top: 35px;
+   font-family: var(--font2);
+   font-weight: 700;
+   font-style: normal; 
+   font-size: 10vw;
+}
+header > p{
+    font-family: var(--font0);
+    font-size: 1.2em;
+    padding-bottom: 40px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+body{
+    background-color: white;
+    color: black;
+    font-family: var(--font1);
+    font-size: 3.3vw;
+}
+
+section{
+    height: 100vh;
+}
+
+main p{
+    padding: 16px;
+    line-height: 1.5em;
+    display: block;
+    margin-top: 50px;
+    margin-left: 20px;
+
+}
+
+
+section#image{
+    position: relative;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+}
+
+section#noimage{
+    height: 200vh;
+}
+
+section#noimage p{
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+}
+
+
+#img1{
+    position: relative;
+    background-image: url(../imagens/background001.jpg) 
+}
+
+#img1 p{
+    position: absolute;
+    background-color: black;
+    color: white;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 20px;
+    top: 50%;
+    transform: translate(0%, -60%);
+}
+
+#img2{
+    position: relative;
+    background-image: url(../imagens/background002.jpg);
+}
+
+#img2 p{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.447);
+    color: white;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 20px;
+    top: 50%;
+    transform: translate(0%, -60%);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    margin: 5px;
+}
+
+footer p{
+    font-size: 0.5em;
+    font-family: var(--font0);
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
