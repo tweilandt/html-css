@@ -48,7 +48,7 @@ body{
     background-color: white;
     color: black;
     font-family: var(--font1);
-    font-size: 3.3vw;
+    font-size: 4vw;
 }
 
 section{
@@ -57,9 +57,8 @@ section{
 
 main p{
     padding: 16px;
-    line-height: 1.5em;
+    line-height: 1.2em;
     display: block;
-    margin-top: 50px;
     margin-left: 20px;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -77,14 +76,15 @@ section.image{
 }
 
 section.noimage{
-    height: 200vh;
+    max-height: 200vh;
+    min-height: 80vw;
     position: relative;
 }
 
 section.noimage p{
     position: absolute;
     top: 50%;
-    transform: translate(0%, -60%);
+    transform: translate(0%, -55%);
 
 }
 
@@ -99,6 +99,8 @@ section.noimage p{
     position: absolute;
     background-color: black;
     color: white;
+    min-width: 40vw;
+    max-width: 50vw;
     top: 50%;
     transform: translate(0%, -60%);
 }
