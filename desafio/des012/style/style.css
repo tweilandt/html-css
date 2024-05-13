@@ -7,7 +7,7 @@
 :root{
     --font0: Arial Verdana Helvetica sans-serif;
     --font1: "Bellota", system-ui;
-    --font2: "Passion One", sans-serif
+    --font2: "Passion One", sans-serif;
 }
 
 *{
@@ -23,27 +23,30 @@ header{
 }
 
 header > h1{
-   padding-top: 35px;
+   padding-top: 40px;
+   font-variant: small-caps;
    font-family: var(--font2);
    font-weight: 700;
    font-style: normal; 
    font-size: 10vw;
 }
+
 header > p{
     font-family: var(--font0);
     font-size: 20px;
     padding-bottom: 40px;
 }
 
-header a{
+a{
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
-header a:hover{
+a:hover{
     text-decoration: underline;
 }
+
 body{
     background-color: white;
     color: black;
@@ -52,23 +55,18 @@ body{
 }
 
 section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     height: 100vh;
-}
-
-main p{
-    padding: 16px;
     line-height: 1.2em;
-    display: block;
-    margin-left: 20px;
-    margin-top: 1em;
-    margin-bottom: 1em;
-
+    padding-left: 30px;
 }
 
 
 section.image{
     position: relative;
     background-color: black;
+    color: white;
     background-repeat: no-repeat;
     background-position: right center;
     background-size: cover;
@@ -76,8 +74,8 @@ section.image{
 }
 
 section.noimage{
-    max-height: 200vh;
     min-height: 80vw;
+    max-height: 200vh;
     position: relative;
 }
 
@@ -95,12 +93,11 @@ section.noimage p{
 
 }
 
-#img1 p{
+section.image p{
     position: absolute;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.763);
     color: white;
-    min-width: 40vw;
-    max-width: 50vw;
+    width: 400px;
     top: 50%;
     transform: translate(0%, -60%);
 }
@@ -110,21 +107,10 @@ section.noimage p{
     background-image: url(../imagens/background002.jpg);
 }
 
-#img2 p{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.447);
-    color: white;
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 20px;
-    top: 50%;
-    transform: translate(0%, -60%);
-}
-
 footer{
     background-color: black;
     color: white;
-    margin: 5px;
+    padding: 5px;
 }
 
 footer p{
@@ -133,13 +119,4 @@ footer p{
     text-align: center;
     font-weight: normal;
     letter-spacing: 1px;
-}
-
-footer a{
-    text-decoration: none;
-    color: white;
-}
-
-footer a:hover{
-    text-decoration: underline;
 }
