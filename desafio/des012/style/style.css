@@ -68,13 +68,11 @@ section.noimage{
 section.image{
     background-color: rgb(44, 44, 44);
     color: white;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
 }
-
-/* #img1{
-    position: relative;
-    background-image: url(../imagens/background001.jpg);
-
-} */
 
 section.image > p{
     display: inline-block;
@@ -83,11 +81,16 @@ section.image > p{
     color: white;
 
 }
-/* 
-#img2{
-    position: relative;
+
+
+section#img1{
+    background-image: url(../imagens/background001.jpg);
+
+}
+ 
+section#img2{
     background-image: url(../imagens/background002.jpg);
-} */
+} 
 
 footer{
     background-color: black;
