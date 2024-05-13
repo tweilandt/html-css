@@ -5,9 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Bakbak+One&family=Bellota:wght@300&family=Passion+One:wght@700&display=swap');
 
 :root{
-    --font0: Arial Verdana Helvetica sans-serif;
-    --font1: "Bellota", system-ui;
-    --font2: "Passion One", sans-serif;
+    --font0: Verdana, Geneva, Tahoma, sans-serif;
+    --font1: "Bellota", cursive;
+    --font2: "Passion One", cursive;
 }
 
 *{
@@ -51,7 +51,6 @@ body{
     background-color: white;
     color: black;
     font-family: var(--font1);
-    font-size: 4vw;
 }
 
 section{
@@ -60,6 +59,8 @@ section{
     height: 100vh;
     line-height: 1.2em;
     padding-left: 30px;
+    font-family: var(--font1);
+    font-size: 3.5vw;
 }
 
 
@@ -73,33 +74,19 @@ section.image{
     background-attachment: fixed;
 }
 
-section.noimage{
-    min-height: 80vw;
-    max-height: 200vh;
-    position: relative;
-}
-
-section.noimage p{
-    position: absolute;
-    top: 50%;
-    transform: translate(0%, -55%);
-
-}
-
-
 #img1{
     position: relative;
     background-image: url(../imagens/background001.jpg);
 
 }
 
-section.image p{
+section.image > p{
+    display: inline-block;
+    padding: 5px;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.763);
     color: white;
-    width: 400px;
-    top: 50%;
-    transform: translate(0%, -60%);
+
 }
 
 #img2{
