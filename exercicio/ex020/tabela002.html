@@ -10,45 +10,63 @@
             margin: 0px;
             padding: 0px;
         }
+
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+
         h1{
             text-align: center;
             font-size: 1.5em;
             padding-top: 30px;
             padding-bottom: 30px;
         }
+
         table{
             margin: auto;
             width: 50vw;
             height: 20px;
             border-collapse: collapse;
         }
+
+        caption{
+            padding: 10px;
+        }
+
         th, td{
             border: 1px solid rgb(215, 211, 211);
             padding: 8px;
         }
+
         thead, tfoot{
             background-color: rgb(162, 161, 161);
             color: rgb(255, 255, 255);
         }
+
+        tbody > tr:nth-child(2n){
+            background-color: rgba(211, 211, 211, 0.4);
+        }
+
         td.nummer{
             text-align: right;
         }
+
         p.daten{
             font-size: 0.7em;
             text-align: right;
             padding: 28px;
         }
+
         p a{
             text-decoration: none;
             color: gray;
             font-style: italic;
         }
+
         p a:hover{
             text-decoration: underline;
         }
+
         footer{
             background-color: grey;
             color: white;
@@ -64,11 +82,12 @@
     </style>
 </head>
 <body>
-    <h1>Liste der deutschen Bundesländer nach Bevölkerung (2022)</h1>
+    <h1>Anzahl der Einwohner in Deutschland</h1>
     <table>
+        <caption>Liste der deutschen Bundesländer nach Bevölkerung (2022)</caption>
         <thead>
-            <th>Bundesland</th>
-            <th>Einwohner</th>
+            <th scope="col">Bundesland</th>
+            <th scope="col">Einwohner</th>
         </thead>
         <tbody>
             <tr>
@@ -138,7 +157,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Deutschland</td>
+                <th scope="row">Gesamtbevölkerung</th>
                 <td class="nummer"><strong>84.358.845</strong></td>
             </tr>
         </tfoot>
