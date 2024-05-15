@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <title>Tabelle</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            margin: auto;
+            width: 70vw;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th{
+            text-align: left;
+        }
+        thead th{
+            text-align: center;
+        }
+        thead, .durch th, .durch .nummer{
+            background-color: rgba(128, 128, 128, 0.668);
+            color: white;
+        }
+        .nummer {
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Herausforderung IV</h1>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="colgroup">Bereich</th>
+                <th rowspan="2" scope="colgroup">Fächer</th>
+                <th colspan="2" scope="colgroup">Noten</th>
+                <th rowspan="2" scope="colgroup">Durchschnitte</th>
+            </tr>
+            <tr>
+                <th scope="col">Note 1</th>
+                <th scope="col">Note 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exakte</th>
+                <td>Mathematik</td>
+                <td class="nummer">0.0</td>
+                <td class="nummer">0.0</td>
+                <td class="nummer">0.0</td>
+            </tr>
+            <tr>
+                <td>Physik</td>
+                <td class="nummer">0.0</td>
+                <td class="nummer">0.0</td>
+                <td class="nummer">0.0</td>
+            </tr>
+            <tr>
+                <td>Chemie</td>
+                <td class="nummer">0.0</td>
+                <td class="nummer">0.0</td>
+                <td class="nummer">0.0</td>
+            </tr>
+            <tr>
+                <td>Biologie</td>
+                <td class="nummer">0.0</td>
+                <td class="nummer">0.0</td>
+                <td class="nummer">0.0</td>
+            </tr>
+            <tr class="durch">
+                <th colspan="4" scope="row">Durchschnitt der exakten Wissenschaften</th>
+                <td class="nummer">0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Geisteswissenschaften</th>
+                <td>Geschichte</td>
+                <td class="nummer">0.0</td>
+                <td class="nummer">0.0</td>
+                <td class="nummer">0.0</td>
+            </tr>
+            <tr>
+                <td>Geographie</td>
+                <td class="nummer">0.0</td>
+                <td class="nummer">0.0</td>
+                <td class="nummer">0.0</td>
+            </tr>
+            <tr class="durch">
+                <th colspan="4" scope="row">Durchschnitt der Geisteswissenschaftlichen</th>
+                <td class="nummer">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
