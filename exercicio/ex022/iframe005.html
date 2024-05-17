@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <title>iFrames</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+        main{
+            width: 800px;
+            margin: auto;
+            background-color: rgb(142, 106, 142);
+            color: rgb(17, 41, 17);
+            padding: 15px 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        h1{
+            text-align: center;
+            padding-bottom: 30px;
+            padding-top: 5px;
+        }
+        p::first-letter{
+            margin-left: 25px;
+        }
+        iframe{
+            display: block;
+            margin: auto;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Minha página</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, nobis, deserunt, modi nisi accusamus dolor recusandae quisquam adipisci rerum beatae maiores dolorem illum nesciunt sint pariatur culpa tempora quam! Illum.</p>
+        <iframe src="paginas-extras/pagina005.html" sandbox="allow-scripts" referrerpolicy="no-referrer" frameborder="0">
+            <p>Infelizmente seu navegador nao suporta esse iframe.</p>
+        </iframe>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci quisquam ipsum sit ab id. Repellendus quisquam est incidunt dicta dolorem nesciunt, explicabo libero esse molestias culpa dolor voluptate nulla fugiat.</p>
+    </main>
+</body>
+</html>
