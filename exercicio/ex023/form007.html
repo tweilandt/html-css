@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt;br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="est" id="iest">
+
+                <optgroup label="Nord">
+
+                    <option value="HB">Bremen</option>
+                    <option value="HH">Hamburg</option>
+                    <option value="MV">Mecklenburg-Vorpommer</option>
+                    <option value="NI">Niedersachsen</option>
+                    <option value="SH">Schleswig-Holstein</option>
+
+                </optgroup>
+
+                <optgroup label="Ost">
+                    <option value="BE">Berlin</option>
+                    <option value="BB">Brandenburg</option>
+                    <option value="SN">Sachsen</option>
+                    <option value="ST">Sachsen-Anhalt</option>
+                    <option value="TH">Thüringen</option>
+                </optgroup>
+
+                <optgroup label="Süd">
+                    <option value="BW">Baden-Württemberg</option>
+                    <option value="BY">Bayern</option>
+                </optgroup>
+                
+                
+                <optgroup label="West">
+                    <option value="HE">Hessen</option>
+                    <option value="NW">Nordrhein-Westfalen</option>
+                    <option value="RP" selected>Rheinland-Pfalz</option>
+                    <option value="SL">Saarland</option>
+                </optgroup>
+               
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissao:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administracao</option>
+                <option>Contadora</option>
+                <option>Desenvolvedora de Web</option>
+                <option>Matemática</option>
+                <option>Professora</option>
+                <option>Programadora</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite sua mensagem aqui"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
