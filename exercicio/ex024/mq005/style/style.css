@@ -64,7 +64,8 @@ main{
     text-align: justify;
     background-color: aliceblue;
     border-radius: 10px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 article{
