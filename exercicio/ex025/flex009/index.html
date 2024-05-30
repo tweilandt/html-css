@@ -9,24 +9,29 @@
         div.container{
             background-color: lightcoral;
             display: flex;
+            flex-flow: row wrap;
         }
         div.item{
             background-color: lightblue;
             border: 1px solid black;
-            flex: auto;
             text-align: center;
+            flex-basis: 150px;
+        }
+
+        .basis250{
+            flex-basis: 650px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
+        <div class="item" class="basis250">A</div>
+        <div class="item">Outro conteúdo</div>
         <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
+        <div class="item" class="basis250">D</div>
+        <div class="item">Conteúdo um pouco maior</div>
         <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item" class="basis250">Conteúdo maior ainda que vai ocupar mais espaco</div>
     </div>
 </body>
 </html>
