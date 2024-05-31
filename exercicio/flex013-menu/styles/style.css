@@ -16,40 +16,33 @@ body{
 
 header{
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
     background-color: rgb(31, 112, 66);
     color: white;
     padding: 10px;
-    height: 100px;
+    height: 120px;
     margin-bottom: 10px;
 }
 
 header  h1 {
-    font-size: 2em;
+    margin: 5px;
 }
 
-div.container{
+header > nav{
     display: flex;
-    gap: 50px;
-    flex: row wrap;
-    justify-content: space-between;
-    align-items: center;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    transition: flex-wrap .5s;
 }
 
-.item{
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 10px;
-    align-items: center;
-}
-
-
-
-header .item a{
+header > nav > a{
     text-decoration: none;
     color: black;
     background-color:  rgb(228, 241, 228);
     padding: 10px;
+    margin: 5px;
     border-radius: 8px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.425);
 }
@@ -76,4 +69,9 @@ main p{
     margin-bottom: 10px;
     line-height: 1.2em;
     text-indent: 20px;
+}
+
+@media screen and (max-width: 768) {
+
+    
 }
