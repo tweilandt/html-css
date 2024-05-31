@@ -22,12 +22,12 @@ header{
     background-color: rgb(31, 112, 66);
     color: white;
     padding: 10px;
-    height: 120px;
     margin-bottom: 10px;
 }
 
 header  h1 {
     margin: 5px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.166);
 }
 
 header > nav{
@@ -71,7 +71,16 @@ main p{
     text-indent: 20px;
 }
 
-@media screen and (max-width: 768) {
-
+@media screen and (max-width: 768px) {
+    header, header > nav{
+        flex-flow: column nowrap;
+    }
+    
+    header > nav > a{
+        width: 99vw;
+        text-align: center;
+        margin: 2px;
+        border-radius: 3px;
+    }
     
 }
