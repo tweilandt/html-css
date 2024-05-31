@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
     <title>Menu (Flexbox)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="styles/style.css" media="all">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1 class="titel">Meine Website</h1>
         
-        <nav class="item">
+        <span id="burger" class="material-symbols-outlined" onclick="menuClick()">
+            menu
+            </span>
+        <nav class="item" id="navbar">
             <a href="#">Optionen 1</a>
             <a href="#">Optionen 2</a>
             <a href="#">Optionen 3</a>
@@ -25,16 +29,39 @@
         <article>
             <h2> Testen des Menüs mit Flexbox</h2>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas vero modi accusantium in perspiciatis sequi corporis numquam, dolore quas deserunt tempora explicabo, aut ex nesciunt similique quos aperiam obcaecati culpa!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas vero modi accusantium in perspiciatis sequi corporis numquam, dolore quas deserunt tempora explicabo, aut ex nesciunt similique quos aperiam obcaecati culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, perspiciatis molestias! Atque, similique aliquid sunt id veritatis dicta eaque maiores eveniet eius odit minima quos doloremque, illum inventore facere officiis!
             </p>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate odit quae officia amet adipisci veniam nihil, in natus fugiat molestiae! Aperiam rem consequatur nostrum veniam quasi repudiandae error consequuntur dolore.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate odit quae officia amet adipisci veniam nihil, in natus fugiat molestiae! Aperiam rem consequatur nostrum veniam quasi repudiandae error consequuntur dolore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, similique sit! Aspernatur veritatis animi commodi voluptatibus delectus sit vitae nihil. Inventore sequi eaque sunt, amet dolore eligendi perferendis dignissimos doloremque!
             </p>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate assumenda beatae officia, aliquid commodi ducimus at quasi laboriosam eaque, nisi laudantium obcaecati vitae dolores deserunt provident quam eveniet unde corporis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate assumenda beatae officia, aliquid commodi ducimus at quasi laboriosam eaque, nisi laudantium obcaecati vitae dolores deserunt provident quam eveniet unde corporis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cumque omnis, incidunt earum quas magni cum explicabo dicta, facilis itaque rem aspernatur molestiae aliquam eaque atque. Repellendus tempora officia accusamus.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor velit consequatur accusamus placeat provident deserunt ipsa, aperiam magni odit ducimus necessitatibus fugit quod, delectus ex libero, veniam ipsum adipisci quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum perferendis odit aliquam sunt delectus molestiae pariatur quod illum? Soluta libero totam impedit animi nihil explicabo, nesciunt ullam quia corrupti sint!
             </p>
         </article>
     </main>
     
 </body>
+
+<script>
+    function mudouTamanho(){
+        if(window.innerWidth >= 768){
+            burger.style.display = 'none'
+            navbar.style.display = 'flex'
+        } else if (window.innerWidth < 768){
+            burger.style.display = 'block'
+            navbar.style.display = 'none'   
+        }
+    }
+
+    function menuClick(){
+        if(navbar.style.display == 'none'){
+            navbar.style.display = 'flex'
+        } else if(navbar.style.display == 'flex'){
+            navbar.style.display = 'none'
+        }
+    }
+</script>
 </html>
