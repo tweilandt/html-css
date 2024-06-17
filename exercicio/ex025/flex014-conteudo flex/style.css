@@ -30,27 +30,44 @@ header, section.normal{
 section.flex-content{
     background-color: #683a5f60;
     padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
 }
 
 article.media-text{
     display: flex;
     flex-flow: row wrap-reverse;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
 }
 
 article.text-media{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: center;
+
 }
 
 div.text{
-    flex: 0 1 500px;
+    flex: 1 1 500px;
 }
 
 div.media{
-    flex: 1 1 30vw;
+    flex: 1 0 400px;
+    padding-bottom: 30px;
+}
+
+
+div.media > img{
+    display: block;
+    margin: auto;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+div.media > iframe{
+    display: block;
+    margin: auto;
+    width: 400px;
 }
 
